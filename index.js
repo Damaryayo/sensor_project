@@ -1,7 +1,7 @@
 const express= require("express");
 const app =express();
 var Gpio = require('onoff').Gpio,
-sensor = new Gpio(17, 'in', 'both');
+sensor = new Gpio(2, 'in', 'both');
 
 
 app.get('/', function(req, res){
